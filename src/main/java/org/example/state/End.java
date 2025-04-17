@@ -1,6 +1,6 @@
 package org.example.state;
 
-public class Play extends Phase {
+public class End extends Phase {
     @Override
     public void editContinent() {
         printInvalidCommandMessage();
@@ -18,12 +18,12 @@ public class Play extends Phase {
 
     @Override
     public void showMap() {
-        System.out.println("Show map");
+        printInvalidCommandMessage();
     }
 
     @Override
     public void saveMap() {
-        System.out.println("Save map");
+        printInvalidCommandMessage();
     }
 
     @Override
@@ -43,11 +43,16 @@ public class Play extends Phase {
 
     @Override
     public void assigncountries() {
-
+        printInvalidCommandMessage();
     }
 
     @Override
     public void deploy() {
+        printInvalidCommandMessage();
+    }
 
+    @Override
+    public void endGame() {
+        System.out.println("End of game");
     }
 }

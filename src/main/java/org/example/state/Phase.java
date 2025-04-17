@@ -21,6 +21,8 @@ public abstract class Phase {
 
     public abstract void deploy();
 
+    public abstract void endGame();
+
     // methods common to all states
     public void printInvalidCommandMessage() {
         System.out.println("Invalid command in state " + this.getClass().getSimpleName() );

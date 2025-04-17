@@ -50,4 +50,9 @@ public abstract class Edit extends Phase {
     public void deploy() {
         printInvalidCommandMessage();
     }
+
+    @Override
+    public void endGame() {
+        printInvalidCommandMessage();
+    }
 }
