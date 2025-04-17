@@ -1,6 +1,12 @@
 package org.example.state;
 
+import org.example.GameEngine;
+
 public class End extends Phase {
+    public End(GameEngine gameEngine) {
+        super(gameEngine);
+    }
+
     @Override
     public void editContinent() {
         printInvalidCommandMessage();

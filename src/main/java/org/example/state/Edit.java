@@ -1,6 +1,12 @@
 package org.example.state;
 
+import org.example.GameEngine;
+
 public abstract class Edit extends Phase {
+
+    public Edit(GameEngine gameEngine) {
+        super(gameEngine);
+    }
     @Override
     public void editContinent() {
         System.out.println("Edit continent");

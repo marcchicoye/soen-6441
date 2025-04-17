@@ -36,6 +36,6 @@ public class Continent {
 
     @Override
     public String toString() {
-        return id + " " + name + " " + bonusValue + " " + color;
+        return name + " " + bonusValue + " " + color;
     }
 }

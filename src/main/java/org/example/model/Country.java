@@ -23,6 +23,10 @@ public class Country {
 
     }
 
+    public List<Integer> getAdjacentCountryId() {
+        return adjacentCountryId;
+    }
+
     public int getId() {
         return id;
     }
@@ -33,8 +37,7 @@ public class Country {
 
     @Override
     public String toString() {
-        String info = id + " " + name + " " + idContinent + " " + xCoordinate + " " + yCoordinate + " " + adjacentCountryId;
-
+        String info = id + " " + name + " " + idContinent + " " + xCoordinate + " " + yCoordinate;
         return info;
     }
 }

@@ -2,6 +2,7 @@ package org.example.utils;
 
 import org.example.model.Continent;
 import org.example.model.Country;
+import org.example.model.Map;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
@@ -16,7 +17,7 @@ import java.util.regex.Pattern;
 
 public class LoadMap {
 
-    public void loadMap(String fileName) {
+    public Map loadMap(String fileName) {
 
         List<Continent> continents = new ArrayList<>();
         List<Country> countries = new ArrayList<>();
@@ -93,6 +94,11 @@ public class LoadMap {
         for (Country country : countries) {
             System.out.println(country);
         }
+        Map map = new Map();
+        map.setContinents(continents);
+        map.setCountries(countries);
+
+        return map;
     }
 
 

@@ -1,6 +1,13 @@
 package org.example.state;
 
+import org.example.GameEngine;
+
 public abstract class Phase {
+    private GameEngine gameEngine;
+
+    public Phase(GameEngine gameEngine) {
+        this.gameEngine = gameEngine;
+    }
 
     // Command common
     public abstract void editContinent();

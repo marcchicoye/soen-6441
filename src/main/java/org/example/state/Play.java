@@ -1,6 +1,13 @@
 package org.example.state;
 
+import org.example.GameEngine;
+
 public class Play extends Phase {
+
+    public Play(GameEngine gameEngine) {
+        super(gameEngine);
+    }
+
     @Override
     public void editContinent() {
         printInvalidCommandMessage();
@@ -49,5 +56,10 @@ public class Play extends Phase {
     @Override
     public void deploy() {
 
+    }
+
+    @Override
+    public void endGame() {
+        System.out.println("End game");
     }
 }
