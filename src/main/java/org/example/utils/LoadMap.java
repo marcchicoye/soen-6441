@@ -87,13 +87,6 @@ public class LoadMap {
             System.out.println("Error reading file!");
         }
 
-        for (Continent continent : continents) {
-            System.out.println(continent);
-        }
-
-        for (Country country : countries) {
-            System.out.println(country);
-        }
         Map map = new Map();
         map.setContinents(continents);
         map.setCountries(countries);

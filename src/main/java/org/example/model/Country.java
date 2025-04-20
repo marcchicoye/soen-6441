@@ -23,6 +23,10 @@ public class Country {
 
     }
 
+    public int getIdContinent() {
+        return idContinent;
+    }
+
     public List<Integer> getAdjacentCountryId() {
         return adjacentCountryId;
     }
