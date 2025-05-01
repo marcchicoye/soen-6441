@@ -3,7 +3,7 @@ package org.example.state;
 import org.example.GameEngine;
 
 public abstract class Phase {
-    private GameEngine gameEngine;
+    GameEngine gameEngine;
 
     public Phase(GameEngine gameEngine) {
         this.gameEngine = gameEngine;
@@ -29,6 +29,8 @@ public abstract class Phase {
     public abstract void deploy();
 
     public abstract void endGame();
+
+    public abstract void nextStage();
 
     // methods common to all states
     public void printInvalidCommandMessage() {

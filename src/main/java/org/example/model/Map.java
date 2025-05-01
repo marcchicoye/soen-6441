@@ -1,6 +1,7 @@
 package org.example.model;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 public class Map {
@@ -24,4 +25,12 @@ public class Map {
     }
 
     public void addContinent(Continent continent) {}
+
+    public void removeContinent(Continent continent) {
+        continents.removeIf(continent1 -> continent1.getName().equals(continent.getName()));
+    }
+
+    public void removeContinentByName(String name) {
+        continents.removeIf(continent -> continent.getName().equals(name));
+    }
 }

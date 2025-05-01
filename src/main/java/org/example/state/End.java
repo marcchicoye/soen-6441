@@ -61,4 +61,9 @@ public class End extends Phase {
     public void endGame() {
         System.out.println("End of game");
     }
+
+    @Override
+    public void nextStage() {
+
+    }
 }

@@ -14,7 +14,11 @@ public class Continent {
         this.id = id;
         this.name = name;
         this.bonusValue = bonusValue;
-        this.color = color;
+        if(color != null) {
+            this.color = color;
+        } else {
+            this.color = "black";
+        }
         countries = new ArrayList<>();
     }
 
